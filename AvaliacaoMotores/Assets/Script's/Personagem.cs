@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class Personagem : MonoBehaviour
 {
+    
     void Start()
     {
        
-        Nome = "Anjo da Luz"; 
-        Vida = 100;
-        Ataque = 20;
-        Defesa = 10;
+        Nome = "Azazel, O Mensageiro"; 
+        Vida = 150;
+        Ataque = 30;
+        Defesa = 15;
         Asas = "Grandes e brancas";
-        Purificacao = 90;
+        Purificacao = 95;
 
         ExibirStatusAnjo();
     }
@@ -79,7 +80,12 @@ public class Personagem : MonoBehaviour
         _purificacao = purificacao;
         HabilidadeEspecial = "Raio Celestial"; 
     }
-    
+
+    protected Personagem()
+    {
+        throw new System.NotImplementedException();
+    }
+
     public void UsarRaioCelestial(Personagem alvo)
     {
         Debug.Log($"{Nome} invoca o {HabilidadeEspecial} em {alvo.Nome}!");
