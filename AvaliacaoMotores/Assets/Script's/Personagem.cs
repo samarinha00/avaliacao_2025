@@ -83,7 +83,6 @@ public class Personagem : MonoBehaviour
 
     protected Personagem()
     {
-        throw new System.NotImplementedException();
     }
 
     public void UsarRaioCelestial(Personagem alvo)
